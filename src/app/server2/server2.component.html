@@ -5,6 +5,7 @@
 <!-- <input type="text" (input)="onUpdate($event)" class="form-control"> -->
 <input type="text" [(ngModel)]="serverInput" class="form-control">
 <!-- <p>{{ serverInput }}</p> -->
+<app-server *ngFor="let serverName of servers"></app-server>
 <hr>
 <h5>Assignment 2</h5>
 <input type="text" [(ngModel)]="userName">

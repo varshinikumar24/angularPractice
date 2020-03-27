@@ -9,7 +9,7 @@ export class Server2Component implements OnInit {
   serverDisabled = true;
   serverCreationStatus= false;
   serverInput="test";
-  servers=['testServer 1',"testServer 2"];
+  servers=["testServer 1","testServer 2"];
   userName="";
   userNameButton =true;
   if(userName)
