@@ -2,7 +2,12 @@
 <p>{{serverCreationStatus}}</p>
 <br>
 <label >Server name</label>
-<input type="text" (input)="onUpdate($event)" class="form-control">
+<!-- <input type="text" (input)="onUpdate($event)" class="form-control"> -->
 <input type="text" [(ngModel)]="serverInput" class="form-control">
-<p>{{ serverInput }}</p>
+<!-- <p>{{ serverInput }}</p> -->
+<hr>
+<h5>Assignment 2</h5>
+<input type="text" [(ngModel)]="userName">
+<p>{{userName}}</p><br>
+<button class="btn btn-primary" [disabled]="!userName" (click)="onUserNameEntered()">username entered</button>
 
