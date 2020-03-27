@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector : 'app-warningAlert',
-    template:` <h3>Warning !!!! </h3>`,
+    templateUrl:'./warningAlert.component.html',
     styles:[ `h3{
         color:red; }`]
 })

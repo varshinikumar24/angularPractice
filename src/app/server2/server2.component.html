@@ -1,2 +1,8 @@
-<p>server2 works!</p>
+<button class="btn btn-primary" [disabled]="serverDisabled" (click)="getServerCreationstatus()">Add Server </button>
+<p>{{serverCreationStatus}}</p>
+<br>
+<label >Server name</label>
+<input type="text" (input)="onUpdate($event)" class="form-control">
+<input type="text" [(ngModel)]="serverInput" class="form-control">
+<p>{{ serverInput }}</p>
 
