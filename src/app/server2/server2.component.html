@@ -1,5 +1,5 @@
 <button class="btn btn-primary" [disabled]="serverDisabled" (click)="getServerCreationstatus()">Add Server </button>
-<p>{{serverCreationStatus}}</p>
+<p *ngIf="serverCreationStatus">Server is created !!! The server name is {{serverInput}} </p>
 <br>
 <label >Server name</label>
 <!-- <input type="text" (input)="onUpdate($event)" class="form-control"> -->

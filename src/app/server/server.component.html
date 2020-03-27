@@ -1,4 +1,10 @@
-{{"Server"}} is {{Id}} and status is {{status}} <br>
-The status is {{getStatus()}}<br>
 
-<app-server2></app-server2>
+<p [ngStyle]="{backgroundColor:getColor()}" 
+    [ngClass]="{online: status==='online'}">Server id  is {{Id}} and status is {{status}}</p> <br>
+
+<hr>
+<p><strong>Directives</strong></p>
+<hr>
+
+<app-server2 ></app-server2>
+

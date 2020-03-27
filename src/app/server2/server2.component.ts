@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Server2Component implements OnInit {
   serverDisabled = true;
-  serverCreationStatus= "No server is created ";
+  serverCreationStatus= false;
   serverInput="test";
+  servers=['testServer 1',"testServer 2"];
   userName="";
   userNameButton =true;
   if(userName)
@@ -30,11 +31,13 @@ export class Server2Component implements OnInit {
 
   
   getServerCreationstatus(){
-    this.serverCreationStatus="Server is created !!! The server name is"+ this.serverInput;
+    this.serverCreationStatus= true;
+    this.servers.push(this.serverInput);
   }
 
   onUpdate(event: Event){
       this.serverInput =(<HTMLInputElement>event.target).value;
+     
   }
   onUserNameEntered(){
      this.userName=" ";
